@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  current_machine: MyString
+  current_machine_ip: MyString
+  target_machine: MyString
+  target_machine_ip: MyString
+  response_time_ms: 1.5
+  ping_time: 2023-04-01 23:41:35
+  note: MyText
+
+two:
+  current_machine: MyString
+  current_machine_ip: MyString
+  target_machine: MyString
+  target_machine_ip: MyString
+  response_time_ms: 1.5
+  ping_time: 2023-04-01 23:41:35
+  note: MyText

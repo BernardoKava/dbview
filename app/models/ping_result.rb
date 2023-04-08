@@ -1,0 +1,2 @@
+class PingResult < ApplicationRecord
+end

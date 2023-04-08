@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ping results</h1>
+
+<div id="ping_results">
+  <% @ping_results.each do |ping_result| %>
+    <%= render ping_result %>
+    <p>
+      <%= link_to "Show this ping result", ping_result %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ping result", new_ping_result_path %>

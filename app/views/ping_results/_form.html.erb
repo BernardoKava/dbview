@@ -1,0 +1,52 @@
+<%= form_with(model: ping_result) do |form| %>
+  <% if ping_result.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ping_result.errors.count, "error") %> prohibited this ping_result from being saved:</h2>
+
+      <ul>
+        <% ping_result.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :current_machine, style: "display: block" %>
+    <%= form.text_field :current_machine %>
+  </div>
+
+  <div>
+    <%= form.label :current_machine_ip, style: "display: block" %>
+    <%= form.text_field :current_machine_ip %>
+  </div>
+
+  <div>
+    <%= form.label :target_machine, style: "display: block" %>
+    <%= form.text_field :target_machine %>
+  </div>
+
+  <div>
+    <%= form.label :target_machine_ip, style: "display: block" %>
+    <%= form.text_field :target_machine_ip %>
+  </div>
+
+  <div>
+    <%= form.label :response_time_ms, style: "display: block" %>
+    <%= form.text_field :response_time_ms %>
+  </div>
+
+  <div>
+    <%= form.label :ping_time, style: "display: block" %>
+    <%= form.datetime_field :ping_time %>
+  </div>
+
+  <div>
+    <%= form.label :note, style: "display: block" %>
+    <%= form.text_area :note %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
